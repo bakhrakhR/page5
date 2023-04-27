@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+    text-align: right;
+    font: normal normal 900 48px/70px 'Heebo';
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+p {
+    text-align: right;
+    font: normal normal normal 20px/29px 'Heebo';
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+    margin-top: 34px;
+    margin-bottom: 41px;
+}
+
+span {
+    text-align: right;
+    font: normal normal 900 48px/70px 'Heebo';
+    letter-spacing: 0px;
+    color: #F50B33;
+}
+
+label {
+    text-align: right;
+    font: normal normal bold 16px/24px 'Heebo';
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 3.125rem;
+    max-width: 26.125rem;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #F50B33;
+    margin-bottom: 2.0625rem;
+    font-size: 1.5625rem;
+}
+
+button {
+    width: 166px;
+    height: 50px;
+    background: #F50B33 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    transition: background-color 0.2s, color 0.2s, scale 0.2s, border 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(2, 2, 83, 1);
+    scale: 1.1;
+    border: #F50B33 solid 3px;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+._rightside {
+    width: 60%;
+    height: 100vh;
+    background-image: url(/image/background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+._lefttside {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    max-width: 70%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1320px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ._lefttside {
+        width: 100%;
+
+    }
+
+    ._rightside {
+        width: 80%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    p {
+        display: none;
+    }
+
+    h1,
+    span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    ._rightside {
+        background-size: cover;
+        max-height: 50vh;
+        background-position: right;
+        width: 100%;
+    }
+
+    form {
+        padding-bottom: 10px;
+    }
+}
