@@ -87,7 +87,7 @@ button:hover {
 ._rightside {
     width: 60%;
     height: 100vh;
-    background-image: url(image/background.png);
+    background-image: url(../image/background.png);
     background-repeat: no-repeat;
     background-position: right;
 }
